@@ -26,14 +26,12 @@ print(" ")
 print("     Завдання 3")
 print("Напишіть програму, яка використовує концепцію умовного виконання, приймає рядок як вхідні дані та...")
 c = input("- ")
-Spathiphyllum = "Spathiphyllum"
-spathiphyllum = "spathiphyllum"
-if Spathiphyllum:
+if c == "Spathiphyllum":
     print("Yes - Spathiphyllum is the best plant ever!")
-elif spathiphyllum:
+elif c == "spathiphyllum":
     print("No, I want a big Spathiphyllum!")
 else:
-    print("Spathiphyllum! Not:", c)   #Зі спатіфілумом виникли проблеми, не знаю як присвоїти вводному слову змінну. Тому не працюе.
+    print("Spathiphyllum! Not:", c)
 print(" ")
 
 
