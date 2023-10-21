@@ -1,6 +1,8 @@
 print("     Лабораторна робота №2. Функція print()")
 print("Мета: навчитися писати і запускати найпростіші програми на Python з використанням функції print().")
 print(" ")
+
+
 print("      *     ")
 print("    *  *    ")
 print("   *    *   ")
@@ -10,6 +12,8 @@ print("   *    *   ")
 print("   *    *   ")
 print("   ******   ")
 print(" ")
+
+
 print("I`m student")
 print("I`m", "learning", "python")
 number1 = "500"
