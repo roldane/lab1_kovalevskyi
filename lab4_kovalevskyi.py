@@ -114,4 +114,24 @@ import time
 for loop in range(5):
     print(loop, "Missisipi")
     time.sleep(1)
+print(" ")
 
+
+print("     Завдання 8")
+word = input("access word - ")
+while word != "chupacabra":
+    word = input("access word - ")
+    if word == "chupacabra":
+        break
+print("You've successfully left the loop.")
+print(" ")
+
+
+print("     Завдання 9")
+user_word = input("text a word: ")
+for letter in user_word:
+    if letter == ("A", "E", "I", "O", "U"):
+        print(user_word.upper())
+    elif letter != ("A", "E", "I", "O", "U"):
+        print(user_word)
+    continue # Поки що не працюе.
