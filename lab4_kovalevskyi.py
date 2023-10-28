@@ -129,9 +129,28 @@ print(" ")
 
 print("     Завдання 9")
 user_word = input("text a word: ")
-for letter in user_word:
-    if letter == ("A", "E", "I", "O", "U"):
-        print(user_word.upper())
-    elif letter != ("A", "E", "I", "O", "U"):
-        print(user_word)
-    continue # Поки що не працюе.
+for letter in user_word.upper():
+    if letter == "A":
+        continue
+    if letter == "E":
+        continue
+    if letter == "I":
+        continue
+    if letter == "O":
+        continue
+    if letter == "U":
+        continue
+    elif letter != "A":
+        print(letter)
+    elif letter != "E":
+        print(letter)
+    elif letter != "I":
+        print(letter)
+    elif letter != "O":
+        print(letter)
+    elif letter != "U":
+        print(letter)
+print(" ")
+
+print("     Завдання 10")
+
