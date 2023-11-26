@@ -24,6 +24,10 @@ if year % d != 0:
     e = 4
 elif year % d == 0:
     f = 4
+if e > f:
+    print("Common")
+elif f > e:
+    print("Leap")
 
 def is_year_leap(year):
     if e > f:
@@ -47,7 +51,7 @@ print(" ")
 
 print("     Завдання 2")
 
-month = input("month - ")
+month = int(input("month - "))
 
 def is_year_leap(year):
     if e > f:
@@ -57,14 +61,16 @@ def is_year_leap(year):
         return True
 
 def days_in_month(year, month):
-     if [month == 2, year == 1900]:
+     if month == 2:
          return 28
-     if [month == 2, year == 2000]:
+     if month == 2:
          return 29
-     if [month == 1, year == 2016]:
+     if month == 1:
          return 31
-     if [month == 11, year == 1987]:
+     if month == 11:
          return 30
+     else:
+         return 0
 
 test_years = [1900, 2000, 2016, 1987]
 test_months = [2, 2, 1, 11]
@@ -78,3 +84,20 @@ for i in range(len(test_years)):
        print("OK")
    else:
        print("Failed")
+print(" ")
+
+
+print("     Завдання 3")
+
+day = int(input("day - "))
+a = 1
+def day_of_year(year, month, day):
+  if year ==
+
+if False:
+    print("None")
+elif True:
+    print("Match data -", year, month, day)
+test_year = [1900, 2000, 2016, 1987]
+test_month = [3, 2, 4, 6]
+test_day = [1, 4, 12, 6]
