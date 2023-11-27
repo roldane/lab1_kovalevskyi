@@ -112,7 +112,7 @@ if name == "Grushevskyi":
 elif name == "Vasyok":
     Vasyok.append(new_number)
 if name == "Polupe":
-    Vasyok.append(new_number)
+    Polupe.append(new_number)
 print("Grushevskyi - ", Grushevskyi)
 print("Vasyok - ", Vasyok)
 print("Polupe - ", Polupe)
