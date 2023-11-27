@@ -57,4 +57,65 @@ print("     Завдання 4")
 print("""
     Напишіть програму, яка створює словник, що містить інформацію про студентів, використовуючи вказані кортежі в якості значень.
 Кожен ключ – це прізвище студента. Виведіть на екран інформацію про студента, введеного користувачем.
+
+Список студентів:
+1) Grushevskyi.
+2) Vasyok.
+3) Polupe.
 """)
+name = input("Введіть прізвище студента - ")
+score_1 = (4, 5, 3)
+score_2 = (8, 6, 7)
+score_3 = (22, 41, 12)
+average_score_1 = sum(score_1) / len(score_1)
+average_score_2 = sum(score_2) / len(score_2)
+average_score_3 = sum(score_3) / len(score_3)
+student_1 = [["Оцінки - ", score_1], ["середній бал - ", average_score_1], ["Прізвище - Grushevskyi"]]
+student_2 = [["Оцінки - ", score_2], ["середній бал - ", average_score_2], ["Прізвище - Vasyok"]]
+student_3 = [["Оцінки - ", score_3], ["середній бал - ", average_score_3], ["Прізвище - Polupe"]]
+if name == "Grushevskyi":
+    for i in range(len(student_1)):
+        for j in range(len(student_1[i])):
+            print(student_1[i][j], end = " ")
+        print()
+if name == "Vasyok":
+    for i in range(len(student_2)):
+        for j in range(len(student_2[i])):
+            print(student_2[i][j], end = " ")
+        print()
+if name == "Polupe":
+    for i in range(len(student_3)):
+        for j in range(len(student_3[i])):
+            print(student_3[i][j], end = " ")
+        print()
+print(" ")
+
+print("""
+    Створіть словник, який містить інформацію про більше, ніж один номер телефону для кожного з контактів в телефонній книзі.
+Ключами будуть імена контактів, а значеннями - список їхніх номерів телефонів. Напишіть функцію, яка дозволяє додати новий номер
+телефону до списку номерів телефону певного контакту. Потім виведіть на екран список номерів телефонів для всіх контактів.
+
+   -----------------------------
+   --Grushevskyi -I- Polupe   --
+   --            -I-          --
+   --Vasyok      -I-          --
+   --            -I-          --
+   -----------1------------2----
+""")
+name = input("Введіть ім'я - ")
+Grushevskyi = [333222222, 662233, 126]
+Vasyok = [222777555, 335544, 537]
+Polupe = [555222111, 998844, 742]
+new_number = input("Новий номер телефону - ")
+if name == "Grushevskyi":
+    Grushevskyi.append(new_number)
+elif name == "Vasyok":
+    Vasyok.append(new_number)
+if name == "Polupe":
+    Vasyok.append(new_number)
+print("Grushevskyi - ", Grushevskyi)
+print("Vasyok - ", Vasyok)
+print("Polupe - ", Polupe)
+print(" ")
+
+print("Висновок: навчився працювати зі структурами даних Кортеж та Словник.")
